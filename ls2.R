@@ -50,6 +50,8 @@ ls2 <- function(name, pos = -1L, envir = as.environment(pos),
         all.names <- all.names[!grepl(npattern, all.names)]
     }
     
+    all.names <- all.names[all.names != "ls2"]
+  
     all.names
 }
                         
